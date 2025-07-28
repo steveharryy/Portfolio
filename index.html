@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+ 
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Portfolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Technical Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+       
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Portfolio</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.jpg" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 id="typed-name"></h1>
+        <p class="section__text__p2">I'm a curious coder from India who transforms real-world problems into innovative solutions through code.</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/abhayresume.pdf')"
+          >
+            Download Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about"  data-aos="fade-up">
+    
+      <h1 class="title">About Me</h1>
+      <div class="container-id">
+     
+          <div class="text-container">
+            <p>
+          Hey, I’m Abhay Kumar, a full stack developer who loves building things that make a real difference. I'm also into data structures and algorithms, and I enjoy solving problems that challenge how I think. Whether it's creating smart web apps or figuring out efficient solutions, I’m always up for it. I’m someone who believes in growing through collaboration, sharing ideas, and building meaningful tech together. Let’s connect and create something impactful!
+            </p>
+          </div>
+        </div>
+     
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+   <section id="education" data-aos="fade-up">
+  <h1 class="title">Education</h1>
+  <div class="section-container">
+    <div class="education-grid">
+      <div class="education-card">
+        <img src="./assets/unilogo.png" alt="GGSIPU Logo" class="icon" />
+        <div>
+          <h3>Guru Gobind Singh Indraprastha University</h3>
+          <p>Bachelor of Technology – BTech | Electronics and Communication Engineering</p>
+        </div>
+        <p class="date-range">Sep 2023 – Sep 2027</p>
+      </div>
+
+       
+
+      <div class="education-card">
+        <img src="./assets/lbslogo.png" alt="CMS Logo" class="icon" />
+        <div>
+          <h3>Lal Bahadur Shashtri Senior Secondary School</h3>
+          <p>Secondary School Certificate | PCM</p>
+         
+        </div>
+        <p class="date-range">2018 – 2022</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Technical Skills Section -->
+    <section id="skills" data-aos="fade-up">
+      <h1 class="title">Technical Skills</h1>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h2>Frontend</h2>
+          <div class="skills-tags">
+            <span>React.js</span><span>Next.js</span><span>Java</span><span>JavaScript</span><span>React Native</span><span>TypeScript</span><span>Tailwind CSS</span><span>Material UI</span><span>Shadcn/ui</span><span>React Query</span><span>SWR</span><span>WebRTC</span><span>Webpack</span><span>Redux Toolkit</span>
+        </div>
+        <div class="skill-category">
+          <h2>Backend</h2>
+          <div class="skills-tags">
+            <span>Node.js</span><span>Express.js</span><span>FastAPI</span><span>Flask</span><span>Clerk Auth</span><span>Cloudinary</span><span>Firebase Admin SDK</span><span>WebSockets</span><span>RESTful APIs</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h2>Database</h2>
+          <div class="skills-tags">
+            <span>PostgreSQL</span><span>MongoDB</span><span>MySQL</span><span>Supabase</span><span>Firestore</span><span>FireBase</span><span>Prisma ORM</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h2>DevOps & Tools</h2>
+          <div class="skills-tags">
+            <span>Git</span><span>GitHub Actions</span><span>Docker</span><span>Vercel</span><span>Railway</span><span>AWS</span><span>NGINX</span><span>Postman</span><span>ESLint & Prettier</span><span>Figma</span><span>Chrome DevTools</span>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    <section id="projects" data-aos="fade-up">
+
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/finora.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Finora</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/steveharryy/finora'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href= 'https://finora-snowy.vercel.app/' "
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/fizzysoda.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Fizzy Soda-Landing Page</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/steveharryy/Soda-Can'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://soda-can-three.vercel.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/cryptotracker.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">CryptoTracker</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/steveharryy/CryptoTracker'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://crypto-tracker-xi-gilt.vercel.app/ '"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact" data-aos="fade-up">
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/mail-Photoroom.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:adinfotech22@gmail.com">adinfotech22@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkdeln.webp"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="www.linkedin.com/in/abhay-kumar-a10854297">LinkedIn</a></p>
+        </div>
+         <div class="contact-info-container">
+          <img
+            src="./assets/github.png"
+            alt="Github  icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://github.com/steveharryy/">Github</a></p>
+        </div>
+         <div class="contact-info-container">
+          <img
+            src="./assets/insta-Photoroom.png"
+            alt="Instagram icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.instagram.com/abhxy.ae?igsh=MXd3eHQxdDFmMGowZg==">Instagram</a></p>
+        </div>
+         <div class="contact-info-container">
+          <img
+            src="./assets/twitter.png"
+            alt="X icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://x.com/abhaykr232?t=ODWPjRogwL6HmrmCj0wjFQ&s=09">X</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright &#169; 2025 Abhay Kumar Pandit All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+  </body>
+</html>
+
