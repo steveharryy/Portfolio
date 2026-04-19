@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafarNama | Project Details</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- GSAP & Lenis Setup -->
+    <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+    <!-- Sweep Out Page Transition (Starts Active to slide out to right) -->
+    <div class="page-transition active"></div>
+
+    <!-- Soft Edge Glows -->
+    <div class="bg-glow glow-top-left"></div>
+    <div class="bg-glow glow-top-right"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo"><a href="index.html" style="color:white; text-decoration:none;">Abhay.</a></div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Case Study Header Area -->
+    <section class="cs-header">
+        <div class="cs-header-top">
+            <h1 class="cs-title">SafarNama</h1>
+            <span class="cs-year">2024</span>
+        </div>
+        <div class="cs-tag" style="background-color: #333; color: #FFF; border: 1px solid rgba(255,255,255,0.2);">Travel & Itinerary Planner</div>
+    </section>
+
+    <!-- Master Mockup Showcase -->
+    <section class="cs-mockup" style="padding: 50px 0; display: flex; align-items: center; justify-content: center;">
+        <a href="https://safar-nama-alpha.vercel.app/" target="_blank" style="display: block; width: 100%; max-width: 1200px; transition: transform 0.4s ease;">
+            <img src="./assets/safarnama-new.png" alt="SafarNama Master Mockup" style="width: 100%; border-radius: 20px; box-shadow: 0 40px 100px rgba(0,0,0,0.8); cursor: pointer;">
+        </a>
+    </section>
+
+    <!-- Case Study Details Container -->
+    <section class="cs-content">
+        <h2 class="cs-heading">Overview</h2>
+        <p class="cs-paragraph">
+            SafarNama is a comprehensive mobile travel companion designed to simplify the journey of every explorer. Whether you're planning a weekend getaway or a month-long expedition, SafarNama helps you discover hidden gems, create detailed itineraries, and preserve your travel memories in a digital journal.
+        </p>
+
+        <h2 class="cs-heading">Key Features</h2>
+        <p class="cs-paragraph">
+            The app provides personalized destination recommendations based on user interests, interactive map integration for route planning, and a community-driven sharing platform for trip logs and photography.
+        </p>
+        
+        <h2 class="cs-heading">Tech Stack</h2>
+        <p class="cs-paragraph" style="color: #FFF; font-weight: 600;">
+            Flutter / Firebase / Google Maps API / Node.js
+        </p>
+
+        <div class="cs-stats-grid" style="margin-top: 50px;">
+            <div class="cs-stat-card">
+                <h3 style="color: #FFF;">Role</h3>
+                <div class="divider"></div>
+                <p>Mobile App Developer</p>
+            </div>
+            <a href="https://safar-nama-alpha.vercel.app/" target="_blank" class="cs-stat-card" style="text-decoration: none; cursor: pointer; border: 1px solid rgba(255,255,255,0.1); transition: 0.3s;">
+                <h3 style="color: #FFF;">Live Site</h3>
+                <div class="divider"></div>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <p style="margin: 0;">Review Project</p>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2b6bff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Generic Fat Footer -->
+    <footer class="fat-footer">
+        <div class="footer-bottom">
+            <div style="flex: 1;">
+                 <a href="index.html" style="color: white; text-decoration: none; font-size: 1.5rem; font-weight: bold;">Back to Home</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Get In Touch</h4>
+                <p>+91 99110 22936</p>
+                <p>adinfotech22@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
