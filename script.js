@@ -11,6 +11,9 @@ function raf(time) {
 }
 requestAnimationFrame(raf);
 
+// Integrate Lenis with ScrollTrigger
+lenis.on('scroll', ScrollTrigger.update);
+
 // 2. GSAP ScrollTrigger Registration
 gsap.registerPlugin(ScrollTrigger);
 
@@ -143,4 +146,26 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 600); // matches the 0.6s CSS transition
         });
     });
+
+    // 7. Skills Card Entrance
+    const skillCards = document.querySelectorAll('.skill-card');
+    skillCards.forEach((card, index) => {
+        gsap.from(card, {
+            y: 50,
+            opacity: 0,
+            duration: 0.8,
+            ease: "power3.out",
+            scrollTrigger: {
+                trigger: card,
+                start: "top 90%",
+                toggleActions: "play none none reverse"
+            }
+        });
+    });
+
+    // Ensure ScrollTrigger recalculates positions after a short delay
+    setTimeout(() => {
+        ScrollTrigger.refresh();
+    }, 500);
 });
+
